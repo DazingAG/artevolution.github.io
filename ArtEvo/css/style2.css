@@ -73,7 +73,6 @@ body {
             text-align: center;
         }
 
-        /* Mission & Vision */
         .mv-section {
             display: flex;
             gap: 20px;
@@ -87,13 +86,13 @@ body {
             min-width: 280px;
             padding: 20px;
             border-radius: 10px;
-            background: #f5f5f5;
+            background: #77B5D3;
             transition: 0.3s;
         }
 
         .mv-card:hover {
             transform: scale(1.05);
-            background: #e0e0e0;
+            background: #E5D595;
         }
 
         /* Featured Artists */
