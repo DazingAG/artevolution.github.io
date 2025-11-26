@@ -3,12 +3,12 @@ body {
             font-family: "Afacad Flux";
         }
 
-        .container {
+.container {
             display: flex;
             height: 100vh;
         }
 
-        .left {
+.left {
             flex: 1;
             background: #E18E11;
             display: flex;
@@ -19,7 +19,7 @@ body {
             font-weight: bold;
         }
 
-        .right {
+.right {
             flex: 1;
             display: flex;
             justify-content: center;
@@ -27,16 +27,16 @@ body {
             padding: 20px;
         }
 
-        .signup-box {
+.signup-box {
             width: 80%;
             max-width: 350px;
         }
 
-        .signup-box h2 {
+.signup-box h2 {
             margin-bottom: 20px;
         }
 
-        input {
+input {
             width: 100%;
             padding: 12px;
             margin-top: 10px;
@@ -44,7 +44,7 @@ body {
             border: 1px solid #ccc;
         }
 
-        button {
+button {
             width: 100%;
             margin-top: 20px;
             padding: 12px;
@@ -57,26 +57,26 @@ body {
             font-family: "Afacad Flux";
         }
 
-        button:hover {
+button:hover {
             background: #e5d595;
         }
 
-        .message {
+.message {
             margin-top: 15px;
             color: green;
             font-size: 14px;
             display: none;
         }
 
-        @media (max-width: 768px) {
-            .container {
+@media (max-width: 768px) {
+    .container {
                 flex-direction: column;
             }
-            .left {
+    .left {
                 height: 40vh;
                 font-size: 2rem;
             }
-            .right {
+    .right {
                 height: 60vh;
             }
         }
