@@ -1,10 +1,11 @@
     //Image carousel
    const carousel = document.getElementById("carouselImage");
    const images = [
+    "carousel/artevo.png",
     "carousel/concepcion.jpeg",
     "carousel/guevarra.png",
     "carousel/janda.png",
-    "carousel/santos.jpeg",
+    "carousel/santos.jpeg"
 ];
 
         let index = 0;
