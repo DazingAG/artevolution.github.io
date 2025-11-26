@@ -16,24 +16,36 @@ setInterval(() => {
 
 const artworks = {
 photography: [
-{ title: "Sunset Bliss", img: "p1.jpg", artist: "Artist One", price: "₱450", description: "A warm and calming sunset over the ocean horizon.", medium: "Oil on Canvas" },
-{ title: "Golden Fields", img: "p2.jpg", artist: "Artist One", price: "₱380", description: "Golden wheat fields dancing with the afternoon wind.", medium: "Acrylic on Canvas" }
+    { title: "Starry Boulevard", img: "p1.jpg", artist: "Artist One", price: "₱450", description: "A warm and calming sunset over the ocean horizon.", medium: "Oil on Canvas" },
+    { title: "Golden Fields", img: "p2.jpg", artist: "Artist One", price: "₱380", description: "Golden wheat fields dancing with the afternoon wind.", medium: "Acrylic on Canvas" },
+    { title: "Ocean Dreams", img: "p3.jpg", artist: "Artist One", price: "₱500", description: "Soft blue waves crashing on the shore.", medium: "Watercolor" },
+    { title: "Blooming Grace", img: "p4.jpg", artist: "Artist One", price: "₱420", description: "A vivid floral painting symbolizing growth.", medium: "Oil on Canvas" },
+    { title: "Silent Hills", img: "p5.jpg", artist: "Artist One", price: "₱390", description: "Peaceful rolling hills during sunset.", medium: "Acrylic" }
 ],
-traditional: [
-{ title: "Cyber Dreams", img: "d1.jpg", artist: "Artist Two", price: "₱520", description: "A futuristic vision of cybernetic consciousness.", medium: "Digital Painting" },
-{ title: "Neon City", img: "d2.jpg", artist: "Artist Two", price: "₱600", description: "A glowing neon metropolis at night.", medium: "Digital Art" }
+traditionalart: [
+{ title: "Starry Boulevard", img: "p1.jpg", artist: "Artist One", price: "₱450", description: "A warm and calming sunset over the ocean horizon.", medium: "Oil on Canvas" },
+    { title: "Golden Fields", img: "p2.jpg", artist: "Artist One", price: "₱380", description: "Golden wheat fields dancing with the afternoon wind.", medium: "Acrylic on Canvas" },
+    { title: "Ocean Dreams", img: "p3.jpg", artist: "Artist One", price: "₱500", description: "Soft blue waves crashing on the shore.", medium: "Watercolor" },
+    { title: "Blooming Grace", img: "p4.jpg", artist: "Artist One", price: "₱420", description: "A vivid floral painting symbolizing growth.", medium: "Oil on Canvas" },
+    { title: "Silent Hills", img: "p5.jpg", artist: "Artist One", price: "₱390", description: "Peaceful rolling hills during sunset.", medium: "Acrylic" }
 ],
 digital: [
-{ title: "Marble Grace", img: "s1.jpg", artist: "Artist Three", price: "₱700", description: "Elegant marble sculpture.", medium: "Marble" },
-{ title: "Bronze Warrior", img: "s2.jpg", artist: "Artist Three", price: "₱800", description: "A heroic bronze sculpture.", medium: "Bronze" }
+{ title: "Starry Boulevard", img: "p1.jpg", artist: "Artist One", price: "₱450", description: "A warm and calming sunset over the ocean horizon.", medium: "Oil on Canvas" },
+    { title: "Golden Fields", img: "p2.jpg", artist: "Artist One", price: "₱380", description: "Golden wheat fields dancing with the afternoon wind.", medium: "Acrylic on Canvas" },
+    { title: "Ocean Dreams", img: "p3.jpg", artist: "Artist One", price: "₱500", description: "Soft blue waves crashing on the shore.", medium: "Watercolor" },
+    { title: "Blooming Grace", img: "p4.jpg", artist: "Artist One", price: "₱420", description: "A vivid floral painting symbolizing growth.", medium: "Oil on Canvas" },
+    { title: "Silent Hills", img: "p5.jpg", artist: "Artist One", price: "₱390", description: "Peaceful rolling hills during sunset.", medium: "Acrylic" }
 ],
 graphicdesign: [
-{ title: "Urban Silence", img: "ph1.jpg", artist: "Artist Four", price: "₱400", description: "Quiet city streets captured at dawn.", medium: "Photography" },
-{ title: "Nature's Breath", img: "ph2.jpg", artist: "Artist Four", price: "₱450", description: "Breathtaking natural landscapes.", medium: "Photography" }
-]
+{ title: "Starry Boulevard", img: "p1.jpg", artist: "Artist One", price: "₱450", description: "A warm and calming sunset over the ocean horizon.", medium: "Oil on Canvas" },
+    { title: "Golden Fields", img: "p2.jpg", artist: "Artist One", price: "₱380", description: "Golden wheat fields dancing with the afternoon wind.", medium: "Acrylic on Canvas" },
+    { title: "Ocean Dreams", img: "p3.jpg", artist: "Artist One", price: "₱500", description: "Soft blue waves crashing on the shore.", medium: "Watercolor" },
+    { title: "Blooming Grace", img: "p4.jpg", artist: "Artist One", price: "₱420", description: "A vivid floral painting symbolizing growth.", medium: "Oil on Canvas" },
+    { title: "Silent Hills", img: "p5.jpg", artist: "Artist One", price: "₱390", description: "Peaceful rolling hills during sunset.", medium: "Acrylic" }
+    ]
 };
 
-// LOAD CATEGORY
+
 function loadCategory(cat){
 document.getElementById("categoryTitle").innerText = cat.toUpperCase();
 const grid = document.getElementById("galleryGrid");
@@ -49,7 +61,6 @@ artworks[cat].forEach(art=>{
 });
 }
 
-// SHOW ARTWORK DETAILS
 function showArtworkDetails(art){
 document.getElementById("artDetails").style.display = "grid";
 document.querySelector(".back-btn").style.display = "inline-block";
@@ -63,12 +74,10 @@ document.getElementById("artDescription").textContent = art.description;
 document.getElementById("artMedium").textContent = art.medium;
 }
 
-// BACK TO GALLERY
 function showGallery(){
 document.getElementById("artDetails").style.display = "none";
 document.querySelector(".back-btn").style.display = "none";
 document.getElementById("gallery").style.display = "block";
 }
 
-// INITIAL LOAD
-loadCategory("painting");
+loadCategory("All Artworks");
