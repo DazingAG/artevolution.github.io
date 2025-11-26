@@ -29,12 +29,11 @@
 
    <section class="carousel-container" id="home">
         <img id="carouselImage" src="carousel/artevo.png" alt="ArtEvo" />
-        <button id="viewGalleryBtn">View Gallery</button>
     </section>
 
     <section id="description">
-        <h1 style="font-family: 'Afacad Flux'; color: #1E424D;"><b>GET IN TOUCH WITH US!</b></h1>
-        <p>Whether you're an artist, collector, or an art enthusiast, feel free to reach out. ArtEvo is committed to bringing creativity, expression, and inspiration closer to everyone.</p>
+        <h1 style="font-family: 'Afacad Flux'; color: #1E424D; text-align: center;"><b>GET IN TOUCH WITH US!</b></h1>
+        <p style="text-align: center;">Whether you're an artist, collector, or an art enthusiast, feel free to reach out. ArtEvo is committed to bringing creativity, expression, and inspiration closer to everyone.</p>
     </section>
 
 
@@ -49,66 +48,52 @@
             </div>
      </section>
 
-<!-- FEATURED ARTISTS SOCIAL MEDIA -->
-<section class="social-section">
-    <h3>Featured Artists • Social Media</h3>
 
-    <div class="artist-social">
+     <section class="social-section">
+         <h3>Featured Artists • Social Media</h3>
 
-        <div class="artist-block">
-            <h4>Artist One</h4>
-            <div class="social-icons">
+             <div class="artist-social">
+
+             <div class="artist-block">
+                 <h4>Artist One</h4>
+                     <div class="social-icons">
+                         <a href="#"><img src="fb.png"></a>
+                         <a href="#"><img src="ig.png"></a>
+                         <a href="#"><img src="x.png"></a>
+              </div>
+             </div>
+
+             <div class="artist-block">
+                <h4>Artist Two</h4>
+                     <div class="social-icons">
                 <a href="#"><img src="fb.png"></a>
                 <a href="#"><img src="ig.png"></a>
                 <a href="#"><img src="x.png"></a>
-            </div>
-        </div>
+               </div>
+             </div>
 
-        <div class="artist-block">
-            <h4>Artist Two</h4>
-            <div class="social-icons">
+             <div class="artist-block">
+                  <h4>Artist Three</h4>
+                     <div class="social-icons">
                 <a href="#"><img src="fb.png"></a>
                 <a href="#"><img src="ig.png"></a>
                 <a href="#"><img src="x.png"></a>
-            </div>
-        </div>
+             </div>
+             </div>
 
-        <div class="artist-block">
-            <h4>Artist Three</h4>
-            <div class="social-icons">
+              <div class="artist-block">
+                   <h4>Artist Four</h4>
+                     <div class="social-icons">
                 <a href="#"><img src="fb.png"></a>
                 <a href="#"><img src="ig.png"></a>
                 <a href="#"><img src="x.png"></a>
-            </div>
+               </div>
+             </div>
+
         </div>
+    </section>
 
-        <div class="artist-block">
-            <h4>Artist Four</h4>
-            <div class="social-icons">
-                <a href="#"><img src="fb.png"></a>
-                <a href="#"><img src="ig.png"></a>
-                <a href="#"><img src="x.png"></a>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<script>
-// IMAGE CAROUSEL LOGIC
-const carouselImages = ["contact1.jpg", "contact2.jpg", "contact3.jpg"];
-let index = 0;
-
-setInterval(() => {
-    index = (index + 1) % carouselImages.length;
-    document.getElementById("carouselImage").src = carouselImages[index];
-}, 3000);
-
-// DOM EVENT: SEND MESSAGE BUTTON
-document.getElementById("sendMessage").addEventListener("click", () => {
-    alert("Thank you! Your message has been sent.");
-});
-</script>
+<script src="script4.js"></script>
 
 </body>
 </html>
