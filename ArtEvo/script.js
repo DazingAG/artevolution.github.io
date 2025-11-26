@@ -1,46 +1,37 @@
- // For user input
-        let userValue = "";
-        let passwordValue = "";
+let userValue = "";
+let passwordValue = "";
 
-        // Data Organizer
-        const userData = {
-            usernameOrEmailOrPhone: "",
+const userData = {
+        usernameOrEmailOrPhone: "",
             password: ""
         };
 
+const userInput = document.getElementById("userInput");
+const passwordInput = document.getElementById("passwordInput");
+const signupBtn = document.getElementById("signupBtn");
+const successMsg = document.getElementById("successMessage");
 
-        const userInput = document.getElementById("userInput");
-        const passwordInput = document.getElementById("passwordInput");
-        const signupBtn = document.getElementById("signupBtn");
-        const successMsg = document.getElementById("successMessage");
-
-
-        userInput.addEventListener("input", () => {
-            userValue = userInput.value;
+userInput.addEventListener("input", () => {
+        userValue = userInput.value;
         });
 
-        passwordInput.addEventListener("input", () => {
-            passwordValue = passwordInput.value;
+passwordInput.addEventListener("input", () => {
+        passwordValue = passwordInput.value;
         });
 
-        
-        signupBtn.addEventListener("click", () => {
+signupBtn.addEventListener("click", () => {
 
-            // Value holder
-            userData.usernameOrEmailOrPhone = userValue;
-            userData.password = passwordValue;
+userData.usernameOrEmailOrPhone = userValue;
+userData.password = passwordValue;
 
-            // Validation checker
-            if (userValue === "" || passwordValue === "") {
-                alert("Please fill out all fields.");
-                return;
+if (userValue === "" || passwordValue === "") {
+        alert("Please fill out all fields.");
+            return;
             }
 
-            // Dynamic checker
-            successMsg.style.display = "block";
+successMsg.style.display = "block";
 
-            // Redirect the site to HOME
-            setTimeout(() => {
-                window.location.href = "home.html";
+setTimeout(() => {
+        window.location.href = "home.html";
             }, 1500);
         });
