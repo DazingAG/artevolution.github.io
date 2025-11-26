@@ -19,11 +19,11 @@ photography: [
 { title: "Sunset Bliss", img: "p1.jpg", artist: "Artist One", price: "₱450", description: "A warm and calming sunset over the ocean horizon.", medium: "Oil on Canvas" },
 { title: "Golden Fields", img: "p2.jpg", artist: "Artist One", price: "₱380", description: "Golden wheat fields dancing with the afternoon wind.", medium: "Acrylic on Canvas" }
 ],
-traditionalart: [
+traditional: [
 { title: "Cyber Dreams", img: "d1.jpg", artist: "Artist Two", price: "₱520", description: "A futuristic vision of cybernetic consciousness.", medium: "Digital Painting" },
 { title: "Neon City", img: "d2.jpg", artist: "Artist Two", price: "₱600", description: "A glowing neon metropolis at night.", medium: "Digital Art" }
 ],
-digitalart: [
+digital: [
 { title: "Marble Grace", img: "s1.jpg", artist: "Artist Three", price: "₱700", description: "Elegant marble sculpture.", medium: "Marble" },
 { title: "Bronze Warrior", img: "s2.jpg", artist: "Artist Three", price: "₱800", description: "A heroic bronze sculpture.", medium: "Bronze" }
 ],
