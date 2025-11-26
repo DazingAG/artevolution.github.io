@@ -1,5 +1,4 @@
-    //for image carousel
-   const carousel = document.getElementById("carouselImage");
+const carousel = document.getElementById("carouselImage");
    const images = [
     "carousel/artevo.png",
     "carousel/concepcion.jpeg",
@@ -8,15 +7,14 @@
     "carousel/santos.jpeg"
 ];
 
-        let index = 0;
+let index = 0;
 
-        setInterval(() => {
+setInterval(() => {
             index = (index + 1) % images.length;
             carousel.src = images[index];
         }, 3000);
 
-    //gallery
-       document.getElementById("viewGalleryBtn").addEventListener("click", () => {
+document.getElementById("viewGalleryBtn").addEventListener("click", () => {
     window.location.href = "gallery.html"; 
 });
 
