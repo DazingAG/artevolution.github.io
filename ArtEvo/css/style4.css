@@ -95,7 +95,7 @@ nav ul li a:hover {
 }
 
 .contact-form button {
-    background: #6c63ff;
+    background: #663E1F;
     color: white;
     border: none;
     padding: 12px;
@@ -105,7 +105,7 @@ nav ul li a:hover {
 }
 
 .contact-form button:hover {
-    background: #554fe0;
+    background: #663E1F;
 }
 
 .social-section {
@@ -135,17 +135,6 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     gap: 15px;
-}
-
-.social-icons img {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.social-icons img:hover {
-    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
