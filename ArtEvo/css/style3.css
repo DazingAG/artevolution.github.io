@@ -135,7 +135,7 @@ nav ul li a:hover {
 
 .art-info .btn { 
     display: inline-block; 
-    background: #6c63ff; 
+    background: #1E424D; 
     color: white; 
     padding: 12px 20px; 
     border-radius: 12px; 
@@ -144,13 +144,13 @@ nav ul li a:hover {
     font-weight: 600; }
 
 .art-info .btn:hover { 
-    background: #554fe0; 
+    background:#77B5D3; 
 }
 
 .back-btn { 
     display: none; 
     margin: 20px auto; 
-    background: #ccc;
+    background: #E19E11;
     padding: 10px 20px; 
     border-radius: 10px; 
     cursor: pointer; 
@@ -158,7 +158,7 @@ nav ul li a:hover {
 }
 
 .back-btn:hover { 
-    background: #aaa; 
+    background: #E5D595; 
 }
 
 @media (max-width: 768px) { 

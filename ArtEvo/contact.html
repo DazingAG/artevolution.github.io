@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ArtEvo • Contact Us</title>
+
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #f7f7f7;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.logo { width: 70px; height: auto; }
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+nav ul li a:hover {
+    color: #1877f2;
+}
+
+/* CAROUSEL */
+.carousel {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+.carousel img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* DESCRIPTION */
+.description {
+    padding: 30px;
+    text-align: center;
+}
+.description h2 {
+    font-size: 2rem;
+}
+.description p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* CONTACT FORM */
+.contact-section {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.contact-section h3 {
+    margin-bottom: 20px;
+}
+.contact-form {
+    display: grid;
+    gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.contact-form button {
+    background: #6c63ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background: #554fe0;
+}
+
+/* FEATURED ARTISTS SOCIAL MEDIA */
+.social-section {
+    padding: 30px;
+    text-align: center;
+}
+.artist-social {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+.artist-block {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.artist-block h4 {
+    margin-bottom: 10px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav ul { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <img src="logo.png" class="logo" alt="ArtEvo Logo" />
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" style="color:#1877f2;">Contact Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- CAROUSEL -->
+<section class="carousel">
+    <img id="carouselImage" src="contact1.jpg" alt="Gallery Image" />
+</section>
+
+<!-- DESCRIPTION -->
+<section class="description">
+    <h2>Get in Touch With Us</h2>
+    <p>Whether you're an artist, collector, or art enthusiast, feel free to reach out. ArtEvo is committed to bringing creativity, expression, and inspiration closer to everyone.</p>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="contact-section">
+    <h3>Contact Form</h3>
+
+    <div class="contact-form">
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+        <button id="sendMessage">Send Message</button>
+    </div>
+</section>
+
+<!-- FEATURED ARTISTS SOCIAL MEDIA -->
+<section class="social-section">
+    <h3>Featured Artists • Social Media</h3>
+
+    <div class="artist-social">
+
+        <div class="artist-block">
+            <h4>Artist One</h4>
+            <div class="social-icons">
+                <a href="#"><img src="fb.png"></a>
+                <a href="#"><img src="ig.png"></a>
+                <a href="#"><img src="x.png"></a>
+            </div>
+        </div>
+
+        <div class="artist-block">
+            <h4>Artist Two</h4>
+            <div class="social-icons">
+                <a href="#"><img src="fb.png"></a>
+                <a href="#"><img src="ig.png"></a>
+                <a href="#"><img src="x.png"></a>
+            </div>
+        </div>
+
+        <div class="artist-block">
+            <h4>Artist Three</h4>
+            <div class="social-icons">
+                <a href="#"><img src="fb.png"></a>
+                <a href="#"><img src="ig.png"></a>
+                <a href="#"><img src="x.png"></a>
+            </div>
+        </div>
+
+        <div class="artist-block">
+            <h4>Artist Four</h4>
+            <div class="social-icons">
+                <a href="#"><img src="fb.png"></a>
+                <a href="#"><img src="ig.png"></a>
+                <a href="#"><img src="x.png"></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+// IMAGE CAROUSEL LOGIC
+const carouselImages = ["contact1.jpg", "contact2.jpg", "contact3.jpg"];
+let index = 0;
+
+setInterval(() => {
+    index = (index + 1) % carouselImages.length;
+    document.getElementById("carouselImage").src = carouselImages[index];
+}, 3000);
+
+// DOM EVENT: SEND MESSAGE BUTTON
+document.getElementById("sendMessage").addEventListener("click", () => {
+    alert("Thank you! Your message has been sent.");
+});
+</script>
+
+</body>
+</html>
