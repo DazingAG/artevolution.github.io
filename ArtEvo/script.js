@@ -32,6 +32,6 @@ if (userValue === "" || passwordValue === "") {
 successMsg.style.display = "block";
 
 setTimeout(() => {
-        window.location.href = "home.html";
+        window.location.href = "index.html";
             }, 1500);
         });
